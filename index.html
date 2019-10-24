@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Unimelb Study Spaces</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<link rel="apple-touch-icon" sizes="57x57" href="i/apple-icon-57x57.png" />
 	<link rel="apple-touch-icon" sizes="60x60" href="i/apple-icon-60x60.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="i/apple-icon-72x72.png" />
@@ -38,6 +40,9 @@
 			text-align: center;
 		}
 	</style>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body id="body" oncontextmenu="handleContextMenu(); return false;">
@@ -71,6 +76,8 @@
 
 	<div class="layout-sidebar__main__inner box">
 		<h2 class="aligned-title">Baillieu Study Spaces </h1>
+			<iframe src="https://library.unimelb.edu.au/library-opening-hours/baillieu-library",
+			>
 			<iframe src="https://l.vemcount.com/embed/widget/DNgAEb69k9r7nTE" scrolling="no" style="border: none"
 				width="300" height="200" frameborder="0"><br /> </iframe><iframe
 				src="https://l.vemcount.com/embed/widget/tP7SWVwgRqvnEfK" scrolling="no" style="border: none"
@@ -127,8 +134,22 @@
 
 	<p>ERC details are not available.  Maybe some other time!</p>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48152049-3"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-48152049-3');
+	</script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+	</script>
 </body>
 
 </html>
