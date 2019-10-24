@@ -1,0 +1,142 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+}
+
+.widget {
+    border: none;
+}
+
+td {
+    text-align: center;
+}
+
+header {
+    padding: 1em 2em;
+    background: rgb(45, 96, 152);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+
+main {
+    min-height: 100vh;
+    background: rgb(209, 231, 255);
+}
+
+#header {
+    padding-top: 7em;
+    padding-bottom: 1em;
+}
+
+#a {
+    color: rgb(97, 255, 255) ;
+}
+
+
+
+.box {
+    padding: 2em 2em;
+}
+
+.more-info {
+    padding-left: 2em;
+}
+
+.box-title{
+}
+
+.widget-box {
+    
+}
+
+#widgets-box {
+    transition: 0.5s;
+    min-height: 45em;
+}
+
+.widgets {
+    padding-top: 0.5em;
+    display: inline-block;
+    
+}
+h3 {
+    margin-top: 1em;
+}
+
+
+.iframe-container {
+    display: inline-block;
+    overflow: hidden;
+    width: 250px;
+    margin-top: 1em;
+}
+
+.iframe-widget {
+    text-align: center;
+    margin-left: -30px;
+    margin-top: -80px;
+    height: 145px;
+    pointer-events: none;
+    min-width: 300px;
+}
+
+#widgets-box {
+    color: black;
+    background: white;
+}
+
+.widget {
+    cursor: pointer;
+    padding: 1.5em;
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    transition: 0.5s;
+    background: white;
+    border-radius: 1em;
+}
+
+.summary-widget {
+    border: 1px solid gray;
+}
+
+.other-widget {
+    display: none;
+}
+
+.widget-title {
+    font-size: 1.5em;
+}
+
+.widget:active {
+    filter: brightness(0.8);
+
+}
+
+.widget-details {
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+
+
+
+.hours-iframe-container {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 1em;
+}
+.hours-iframe-container iframe {
+    margin-left: -20px;
+    margin-top: -315px;
+    height: 880px;
+    /* pointer-events: none; */
+    width: 100%;
+}

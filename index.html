@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Unimelb Study Spaces</title>
 
@@ -13,7 +14,7 @@
 	<link rel="apple-touch-icon" sizes="120x120" href="i/apple-icon-120x120.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="i/apple-icon-144x144.png" />
 	<link rel="apple-touch-icon" sizes="152x152" href="i/apple-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="i/apple-icon-180x180.png" />
+	<link rel="apple-touch-icon" sizes="100x100" href="i/apple-icon-100x100.png" />
 	<link rel="icon" type="image/png" sizes="192x192" href="i/android-icon-192x192.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="i/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="96x96" href="i/favicon-96x96.png" />
@@ -28,128 +29,492 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="theme-color" content="#555" />
 
-	<style>
-		html {
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-		}
-		.widget {
-			border: none;
-		}
-
-		td {
-			text-align: center;
-		}
-	</style>
-
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Own stylesheet -->
+	<link rel="stylesheet" href="main.css">
 </head>
 
-<body id="body" oncontextmenu="handleContextMenu(); return false;">
-	<h1 class="aligned-title">Unimelb Study Spaces</h1>
-	<p>Looking for somewhere to study? Updated in real time, this guide shows how busy the study spaces are within
-		this library and others across the Parkville campus.</p>
-	<p>Click <a href="https://library.unimelb.edu.au/services/find-a-seat">here</a> for more detailed information, including non-Parkville libraries.
-	<p>This more accessible website, by Liam Saliba.</p>
-	<div class="layout-sidebar__main__inner box">
-		<h2 class="aligned-title">All Study Spaces Summary </h1>
-			<iframe class="widget" src="https://l.vemcount.com/embed/widget/3t6hTVX05yISdMp" scrolling="no" width="400"
-				height="200" frameborder="0"><br />
-			</iframe>
-			<iframe class="widget" src="https://l.vemcount.com/embed/widget/UxRJHzLxLJ4nJtS" scrolling="no" width="400"
-				height="200" frameborder="0"><br />
-			</iframe>
-			<iframe class="widget" src="https://l.vemcount.com/embed/widget/xHjJTLAZa0cw5fR" scrolling="no" width="400"
-				height="200" frameborder="0"><br />
-			</iframe>
+<body id="body" oncontextmenu="return false;">
+	<header>
+		<h1 class="aligned-title"><i class="fa fa-graduation-cap"></i> Unimelb Study Spaces</h1>
+	</header>
+	<main>
+		<div id="header" class="box" href="/">
+			<p>Looking for somewhere to study? Updated in real time, this guide shows how busy the study spaces are
+				within
+				this library and others across the Parkville campus.</p>
+		</div>
+		<div id="widgets-box">
+			<div class="box widget-box" id="all-box">
+				<h2 class="box-title">All Study Spaces Summary </h2>
+				<p>Tap on a study space for more information and opening hours.</p>
+				<div class="widgets">
+					<div class="widget summary-widget" id="abp-widget">
+						<div class="widget-title">
+							MSD Architecture (ABP)
+						</div>
+						<div class="widget-details">
+							more: Ground, Basement
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/3t6hTVX05yISdMp"
+								scrolling="no" width="300" height="100" frameborder="0"
+								allowtransparency="true"></iframe>
+						</div>
+					</div>
+					<div class="widget summary-widget" id="86-widget">
+						<div class="widget-title">
+							Baillieu
+						</div>
+						<div class="widget-details">
+							more: Levels B, Gnd, 1, 2, 3
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/UxRJHzLxLJ4nJtS"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget summary-widget" id="brownless-widget">
+						<div class="widget-title">
+							Brownless (Biomed)
+						</div>
+						<div class="widget-details">
+							more: Levels B, Gnd, 1, 2
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/xHjJTLAZa0cw5fR"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget summary-widget" id="erc-widget">
+						<div class="widget-title">
+							ERC
+						</div>
+						<div class="widget-details">
+							no further details available
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/16ETt79NyQKUtAJ"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget summary-widget" id="ge-widget">
+						<div class="widget-title">
+							Giblin Eunson
+						</div>
+						<div class="widget-details">
+							more: Levels G, UG, 1
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/KuNYNy0mJYPh4H3"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget summary-widget" id="law-widget">
+						<div class="widget-title">
+							Law Library
+						</div>
+						<div class="widget-details">
+							more: Study Zone, Levels 3, 4, 5
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/hjc3KzmKEHmKgRL"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<iframe class="widget" src="https://l.vemcount.com/embed/widget/16ETt79NyQKUtAJ" scrolling="no" width="400"
-				height="200" frameborder="0"></iframe>
-			<iframe class="widget" src="https://l.vemcount.com/embed/widget/KuNYNy0mJYPh4H3" scrolling="no" width="400"
-				height="200" frameborder="0"><br />
-			</iframe>
+			<div class="box widget-box other-widget" id="86-box">
+				<h2 class="box-title"><button class="btn btn-outline-primary back-btn" type="button"
+						style='margin-top: -5px; margin-right: 5px;'><i class="fa fa-arrow-left"></i></button>
+					Baillieu Study Spaces</h2>
+				<div class="widgets">
+					<div class="widget summary-widget">
+						<div class="widget-title">
+							Summary
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/UxRJHzLxLJ4nJtS"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Basement
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/DNgAEb69k9r7nTE"
+								scrolling="no" width="300" height="100" frameborder="0"
+								allowtransparency="true"></iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Ground <small>/ After Hours</small>
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/tP7SWVwgRqvnEfK"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 1
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/Dk5wj8eCRm5gH7j"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 2
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/YdNNA8RBcQym2KN"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 3
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/MnkQs3NWEc5VoCI"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<h3><a href="https://bookit.unimelb.edu.au/cire/login.aspx">Book a study space</a></h3>
+				<p>Bookable project rooms and booths on the ground floor.</p>
+				<h3>Quiet Study</h3>
+				<p>Available on levels 1-3.</p>
+				<h3>Opening Hours</h3>
+				<!-- TODO: Change to 24 hours on Monday 28/10/19 -->
+				<p>After Hours Zone on Ground Floor from 7am to 1am. Requires swipe access via Student Card.</p>
+				<div class="hours-iframe-container">
+					<iframe class="hours-iframe"
+						src="https://library.unimelb.edu.au/library-opening-hours/baillieu-library" scrolling="no"
+						frameborder="0"></iframe>
+				</div>
+			</div>
 
-			<iframe class="widget" src="https://l.vemcount.com/embed/widget/hjc3KzmKEHmKgRL" scrolling="no" width="400"
-				height="200" frameborder="0"><br />
-			</iframe>
-	</div>
+			<div class="box widget-box other-widget" id="abp-box">
+				<h2 class="box-title"><button class="btn btn-outline-primary back-btn" type="button"
+						style='margin-top: -5px; margin-right: 5px;'><i class="fa fa-arrow-left"></i></button>
+					MSD Architecture (ABP) Study Spaces</h2>
+				<div class="widgets">
+					<div class="widget summary-widget">
+						<div class="widget-title">
+							Summary
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/3t6hTVX05yISdMp"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Basement
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/8UfBJ2OyG88QfBU"
+								scrolling="no" width="300" frameborder="0" allowtransparency="true"></iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Ground
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/lHnBxbEk3LpGA6K"
+								scrolling="no" width="300" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<h3><a href="https://bookit.unimelb.edu.au/cire/login.aspx">Book a study space</a></h3>
+				<p>Four project rooms are bookable in the basement.</p>
+				<h3>Quiet Study</h3>
+				<p>Available in the basement level and ground floor.</p>
+				<h3><a
+						href="https://library.unimelb.edu.au/library-opening-hours/architecture,-building-and-planning-library">Opening
+						Hours</a></h3>
+				<div class="hours-iframe-container">
+					<iframe class="hours-iframe"
+						src="https://library.unimelb.edu.au/library-opening-hours/architecture,-building-and-planning-library"
+						scrolling="no" frameborder="0"></iframe>
+				</div>
+			</div>
 
-	<div class="layout-sidebar__main__inner box">
-		<h2 class="aligned-title">Baillieu Study Spaces </h1>
-			<iframe src="https://library.unimelb.edu.au/library-opening-hours/baillieu-library",
-			>
-			<iframe src="https://l.vemcount.com/embed/widget/DNgAEb69k9r7nTE" scrolling="no" style="border: none"
-				width="300" height="200" frameborder="0"><br /> </iframe><iframe
-				src="https://l.vemcount.com/embed/widget/tP7SWVwgRqvnEfK" scrolling="no" style="border: none"
-				width="300" height="200" frameborder="0"><br /> </iframe><iframe
-				src="https://l.vemcount.com/embed/widget/Dk5wj8eCRm5gH7j" scrolling="no" style="border: none"
-				width="300" height="200" frameborder="0"><br /> </iframe><iframe
-				src="https://l.vemcount.com/embed/widget/YdNNA8RBcQym2KN" scrolling="no" style="border: none"
-				width="300" height="200" frameborder="0"><br /> </iframe><iframe
-				src="https://l.vemcount.com/embed/widget/MnkQs3NWEc5VoCI" scrolling="no" style="border: none"
-				width="300" height="200" frameborder="0"><br /></iframe>
-	</div>
+			<div class="box widget-box other-widget" id="brownless-box">
+				<h2 class="box-title"><button class="btn btn-outline-primary back-btn" type="button"
+						style='margin-top: -5px; margin-right: 5px;'><i class="fa fa-arrow-left"></i></button>
+					Brownless (Biomed) Study Spaces</h2>
+				<div class="widgets">
+					<div class="widget summary-widget">
+						<div class="widget-title">
+							Summary
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/xHjJTLAZa0cw5fR"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Basement
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/wO5s3jc1kLDuFfl"
+								scrolling="no" width="300" height="100" frameborder="0"
+								allowtransparency="true"></iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Ground <small>/ After Hours</small>
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/gBeaUYKA9tEoSjr"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 1
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/XBBcqco5cJuZi2y"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 2
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/t7mvsRnv4srnUb3"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<h3><a href="https://bookit.unimelb.edu.au/cire/login.aspx">Book a study space</a></h3>
+				<p>Bookable project rooms and booths on the ground floor.</p>
+				<h3>Quiet Study</h3>
+				<p>Available on levels 1-3.</p>
+				<h3>Opening Hours</h3>
+				<!-- TODO: Change to 24 hours on Monday 28/10/19 -->
+				<p>After Hours Zone on Ground Floor from 7am to 1am. Requires swipe access via Student Card.</p>
+				<div class="hours-iframe-container">
+					<iframe class="hours-iframe"
+						src="https://library.unimelb.edu.au/library-opening-hours/baillieu-library" scrolling="no"
+						frameborder="0"></iframe>
+				</div>
+			</div>
 
-	<div class="layout-sidebar__main__inner box">
-		<h2 class="aligned-title">Brownless BioMed Study Spaces</h1>
-			<iframe src="https://l.vemcount.com/embed/widget/wO5s3jc1kLDuFfl" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/gBeaUYKA9tEoSjr" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/XBBcqco5cJuZi2y" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/t7mvsRnv4srnUb3" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe>
-	</div>
+			<div class="box widget-box other-widget" id="ge-box">
+				<h2 class="box-title"><button class="btn btn-outline-primary back-btn" type="button"
+						style='margin-top: -5px; margin-right: 5px;'><i class="fa fa-arrow-left"></i></button>
+					Giblin Eunson Study Spaces</h2>
+				<div class="widgets">
+					<div class="widget summary-widget">
+						<div class="widget-title">
+							Summary
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/KuNYNy0mJYPh4H3"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Ground
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/2cUEp6RMHoIMQxP"
+								scrolling="no" width="300" height="100" frameborder="0"
+								allowtransparency="true"></iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Upper Ground
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/nrL3EOQyiGRf7mI"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 1
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/pasklAAB9hrLceK"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<h3><a href="https://bookit.unimelb.edu.au/cire/login.aspx">Book a study space</a></h3>
+				<p>Bookable project rooms and booths on the ground floor.</p>
+				<h3>Quiet Study</h3>
+				<p>Available on levels 1-3.</p>
+				<h3>Opening Hours</h3>
+				<!-- TODO: Change to 24 hours on Monday 28/10/19 -->
+				<p>After Hours Zone on Ground Floor from 7am to 1am. Requires swipe access via Student Card.</p>
+				<div class="hours-iframe-container">
+					<iframe class="hours-iframe"
+						src="https://library.unimelb.edu.au/library-opening-hours/baillieu-library" scrolling="no"
+						frameborder="0"></iframe>
+				</div>
+			</div>
 
-	<div class="layout-sidebar__main__inner box">
-		<h2 class="aligned-title">ABP Study Spaces</h1>
-			<iframe src="https://l.vemcount.com/embed/widget/lHnBxbEk3LpGA6K" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/8UfBJ2OyG88QfBU" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe>
-	</div>
+			<div class="box widget-box other-widget" id="law-box">
+				<h2 class="box-title"><button class="btn btn-outline-primary back-btn" type="button"
+						style='margin-top: -5px; margin-right: 5px;'><i class="fa fa-arrow-left"></i></button>
+					Law Library Study Spaces</h2>
+				<div class="widgets">
+					<div class="widget summary-widget">
+						<div class="widget-title">
+							Summary
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/hjc3KzmKEHmKgRL"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 3
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/ZsDYiPSsISTZRQw"
+								scrolling="no" width="300" height="100" frameborder="0"
+								allowtransparency="true"></iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 4
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/5mj07kzlAvhxLMY"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Level 5
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/ufmUaRROlAvDlFd"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget-title">
+							Law Students' Study Zone
+						</div>
+						<div class="iframe-container">
+							<iframe class="iframe-widget" src="https://l.vemcount.com/embed/widget/zaJcDC7mvf7meNe"
+								scrolling="no" width="300" height="100" frameborder="0" allowtransparency="true">
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<h3><a href="https://bookit.unimelb.edu.au/cire/login.aspx">Book a study space</a></h3>
+				<p>Bookable project rooms and booths on the ground floor.</p>
+				<h3>Quiet Study</h3>
+				<p>Available on levels 1-3.</p>
+				<h3>Opening Hours</h3>
+				<!-- TODO: Change to 24 hours on Monday 28/10/19 -->
+				<p>After Hours Zone on Ground Floor from 7am to 1am. Requires swipe access via Student Card.</p>
+				<div class="hours-iframe-container">
+					<iframe class="hours-iframe"
+						src="https://library.unimelb.edu.au/library-opening-hours/baillieu-library" scrolling="no"
+						frameborder="0"></iframe>
+				</div>
+			</div>
 
-	<div class="layout-sidebar__main__inner box">
-		<h2 class="aligned-title">Law Study Spaces</h1>
-			<iframe src="https://l.vemcount.com/embed/widget/ZsDYiPSsISTZRQw" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/5mj07kzlAvhxLMY" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/ufmUaRROlAvDlFd" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/zaJcDC7mvf7meNe" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe>
-	</div>
 
-	<div class="layout-sidebar__main__inner box">
-		<h2 class="aligned-title">Giblin Eunson Study Spaces</h1>
-			<iframe src="https://l.vemcount.com/embed/widget/2cUEp6RMHoIMQxP" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/nrL3EOQyiGRf7mI" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe><iframe
-				src="https://l.vemcount.com/embed/widget/pasklAAB9hrLceK" scrolling="no" style="border: none;"
-				width="300" height="200" frameborder="0"></iframe>
-	</div>
+			<p class="more-info"><a href="https://library.unimelb.edu.au/services/find-a-seat">Click here for more
+					information.</a></p>
+		</div>
 
-	<p>ERC details are not available.  Maybe some other time!</p>
+
+
+		<div class='box' id='other-box'>
+			<h4><a
+					href="https://students.unimelb.edu.au/explore/studying-on-campus/pop-up-study-spaces#main-body-container">Popup
+					study spaces for SWOTVAC / Exams</a></h2>
+				<br>
+				<h4>Today's wellbeing popup</h2>
+					<p class="widget-details">for Thursday 24th October, 2019</p>
+
+					<p>Nothing scheduled for today!</p>
+
+					<p><a
+							href="https://students.unimelb.edu.au/health/wellbeing-during-exams/wellbeing-pop-ups-during-swot-vac">Click
+							here for more details and future dates.</a></p>
+					<br>
+					<br>
+					<br>
+					<small>Unimelb Study Spaces, by <a href="../">Liam Saliba</a>, October 2019. This app is not
+						endorsed or supported by
+						the University of Melbourne. Use at your own discretion!</small>
+		</div>
+	</main>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48152049-3"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-48152049-3');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-48152049-3');
 	</script>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="main.js"></script>
 </body>
 
 </html>
