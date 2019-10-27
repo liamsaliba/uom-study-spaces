@@ -4,8 +4,8 @@
   "theme_color": "#014085",
   "background_color": "#014085",
   "display": "standalone",
-  "Scope": "https://liamsaliba.me/uom-study-spaces/",
-  "start_url": "https://liamsaliba.me/uom-study-spaces",
+  "scope": "https://liamsaliba.me/uom-study-spaces/",
+  "start_url": "https://liamsaliba.me/uom-study-spaces/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
@@ -47,6 +47,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "splash_pages": null
+  ]
 }
