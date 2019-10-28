@@ -32,3 +32,10 @@ $('.back-btn').click(function (e) {
         $('#all-box').fadeIn('fast');
     });
 });
+
+const isInStandaloneMode = () =>
+      (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
+
+ if (isInStandaloneMode()) {
+    console.log("webapp is installed")
+}
