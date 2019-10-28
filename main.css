@@ -108,9 +108,7 @@ main, #header {
     display: inline-block;
 }
 
-.widget-title > * {
-    display: block;
-}
+
 
 .widget-title h6 {
     margin-bottom: 0;
@@ -136,8 +134,27 @@ main, #header {
     flex-grow: 1000000000;
 } */
 
-h3 {
+h4 {
     margin-top: 1em;
+}
+
+.big-open-hours h4 {
+    margin-top: 0;
+}
+
+.after-title {
+    font-size: 0.8em;
+}
+
+.open-hours {
+    margin-top: 0.2em;
+    font-size: 1.15em;
+}
+
+
+
+.after {
+    color: l
 }
 
 
