@@ -14,7 +14,7 @@ td {
 }
 
 header {
-    padding: 1em 2em;
+    padding: 1em 1em;
     background: #014085;
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@ header {
 }
 
 #logo {
-    width: 1.5em;
+    width: 2em;
 }
 
 main {
