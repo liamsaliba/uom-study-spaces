@@ -15,7 +15,7 @@ td {
 
 header {
     padding: 1em 2em;
-    background: rgb(45, 96, 152);
+    background: #014085;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,6 +23,9 @@ header {
     cursor: pointer;
 }
 
+#logo {
+    width: 1.5em;
+}
 
 main {
     min-height: 100vh;
