@@ -1,41 +1,40 @@
-$('#86-widget').click(go86);
-$('#abp-widget').click(goabp);
-$('#brownless-widget').click(gobrownless);
-$('#ge-widget').click(goge);
-$('#law-widget').click(golaw);
+$('#86-widget').click(function (e) {
+    goForward( function () {
+        $('#86-box').fadeIn('fast');
+    });
+});
 
-window.onhashchange = function() {
-    let hash = location.hash.slice(1)
-    if (["86", "abp", "brownless", "ge", "law"].indexOf(hash) ){
-        goForward(hash);
-    }
-}
+$('#abp-widget').click(function (e) {
+    goForward( function () {
+        $('#abp-box').fadeIn('fast');
+    });
+});
 
-$('#86-widget').click(go86);
-$('#abp-widget').click(goabp);
-$('#brownless-widget').click(gobrownless);
-$('#ge-widget').click(goge);
-$('#law-widget').click(golaw);
+$('#brownless-widget').click(function (e) {
+    goForward( function () {
+        $('#brownless-box').fadeIn('fast');
+    });
+});
+$('#ge-widget').click(function (e) {
+    goForward(function () {
+        $('#ge-box').fadeIn('fast');
+    });
+});
 
-function go86() {goForward("86");}
-function goabp() {goForward("abp");}
-function gobrownless() {goForward("brownless");}
-function goge() {goForward("ge");}
-function golaw() {goForward("law");}
+$('#law-widget').click(function (e) {
+    goForward(function () {
+        $('#law-box').fadeIn('fast');
+    });
+});
 
 function goBack(e) {
     $('.other-widget').fadeOut('fast', function () {
         $('#all-box').fadeIn('fast');
-        history.pushState(null, "", "#all");
     });
 }
 
-function goForward(name){
-    $('#all-box').fadeOut('fast', function() {
-        $(`#${name}-box`).fadeIn('fast');
-        history.pushState(null, "", "#" + name);
-    });
-    
+function goForward(func){
+    $('#all-box').fadeOut('fast', func());
 }
 
 $('.back-btn').click(goBack);
