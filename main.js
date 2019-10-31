@@ -27,6 +27,14 @@ $('#law-widget').click(function (e) {
     });
 });
 
+
+
+$('#erc-widget').click(function (e) {
+    goForward(function () {
+        $('#erc-box').fadeIn('fast');
+    });
+});
+
 function goBack(e) {
     $('.other-widget').fadeOut('fast', function () {
         $('#all-box').fadeIn('fast');
