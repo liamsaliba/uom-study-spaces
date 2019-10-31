@@ -218,10 +218,11 @@ h4 {
     font-size: 1.5em;
 }
 
-.widget:active {
+.widget:not(.widget-disabled):active {
     filter: brightness(0.8);
 
 }
+
 
 .widget-details {
     font-style: italic;
