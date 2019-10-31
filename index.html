@@ -648,6 +648,22 @@
 
 		gtag('config', 'UA-48152049-3');
 	</script>
+
+	<!-- Service Worker (PWA) -->
+	<!-- https://codelabs.developers.google.com/codelabs/pwa-offline-quickstart/index.html?index=..%2F..dev-pwa-training#3 -->
+	<script>
+		if ('serviceWorker' in navigator) {
+		  window.addEventListener('load', function() {
+			navigator.serviceWorker.register('service-worker.js')
+			  .then(reg => {
+				console.log('Service worker registered! 😎', reg);
+			  })
+			  .catch(err => {
+				console.log('😥 Service worker registration failed: ', err);
+			  });
+		  });
+		}
+		</script>
 </body>
 
 </html>
