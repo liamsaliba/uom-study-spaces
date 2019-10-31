@@ -34,7 +34,7 @@ function goBack(e) {
 }
 
 function goForward(func){
-    $('#all-box').fadeOut('fast', func());
+    $('#all-box').fadeOut('fast', func);
 }
 
 $('.back-btn').click(goBack);
