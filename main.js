@@ -28,7 +28,6 @@ $('#law-widget').click(function (e) {
 });
 
 
-
 $('#erc-widget').click(function (e) {
     goForward(function () {
         $('#erc-box').fadeIn('fast');
