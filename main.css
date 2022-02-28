@@ -193,7 +193,7 @@ h4 {
     text-align: center;
     margin-left: -30px;
     margin-top: -85px;
-    height: 145px;
+    height: 160px;
     pointer-events: none;
 }
 
@@ -213,6 +213,7 @@ h4 {
     background: white;
     border-radius: 1em;
     flex-grow: 1;
+    padding-bottom: 0px;
 }
 
 .summary-widget {
